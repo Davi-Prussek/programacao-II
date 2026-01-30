@@ -35,9 +35,9 @@ console.log(nome);  // 123
 - Recursos extras: interfaces, enums, generics, decoradores, etc.
 
 ```ts
-let nome: string = "Davi";    //string
+let nome: string = "Joao";    //string
 //nome = 123;                 //Erro de compilação
-console.log(nome);            //"Davi"
+console.log(nome);            //"Joao"
 
 ```
 
