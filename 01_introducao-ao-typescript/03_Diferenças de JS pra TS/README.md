@@ -1,3 +1,5 @@
+## [Voltar](https://github.com/Davi-Prussek/programacao-II/blob/main/01_introducao-ao-typescript/02_Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o/README.md)
+
 # Diferenças entre JavaScript e TypeScript
 
 Este guia mostra as principais diferenças entre **JavaScript (JS)** e **TypeScript (TS)**, 
@@ -38,3 +40,4 @@ let nome: string = "Davi";    //string
 console.log(nome);            //"Davi"
 
 ```
+
