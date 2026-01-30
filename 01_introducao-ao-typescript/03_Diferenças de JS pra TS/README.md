@@ -40,5 +40,12 @@ let nome: string = "Joao";    //string
 console.log(nome);            //"Joao"
 
 ```
+Ao final dessa introdução, você já sabe:
 
+- Entender o que é TypeScript e por que ele existe
+- Configurar o ambiente corretamente
+- Compreender a relação e diferenças entre JavaScript e TypeScript
 
+Nos próximos capítulos, o estudo passa a ser mais práticoe técnico.
+
+## [Clique aqui para começar a ver na prática!]()
