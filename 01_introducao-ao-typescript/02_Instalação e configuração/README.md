@@ -75,5 +75,6 @@ npm -v
       node -v
       ```
 
-## [Caso a versão exibida for a LTS, então está tudo certo e pode continuar para o próximo passo aqui.](https://github.com/Davi-Prussek/programacao-II/blob/main/01_introducao-ao-typescript/03_Diferen%C3%A7as%20de%20JS%20pra%20TS/README.md)
+## [Caso a versão exibida for a LTS, pode continuar para o próximo passo aqui!](https://github.com/Davi-Prussek/programacao-II/blob/main/01_introducao-ao-typescript/03_Diferen%C3%A7as%20de%20JS%20pra%20TS/README.md)
+
 
