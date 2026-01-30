@@ -1,5 +1,8 @@
 # Programação II
 
+# ATENÇÃO:
+**ESTE REPOSITÓRIO ESTÁ EM FASE DE CRIAÇÃO E É UM PROTÓTIPO, ESTÁ INCOMPLETO.**
+
 ## Olá!
 
 Este repositório é um projeto pessoal e independente, criado com o objetivo de
@@ -74,4 +77,5 @@ Cada pasta representa um tema específico e contém exemplos, explicações.
 
 Este repositório está em constante evolução. Sugestões, correções e melhorias são
 sempre bem-vindas.
+
 
