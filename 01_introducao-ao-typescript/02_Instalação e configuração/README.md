@@ -1,4 +1,4 @@
-### [Voltar](https://github.com/Davi-Prussek/programacao-II/blob/main/01_introducao-ao-typescript/01_O%20que%20%C3%A9%20TypeScript/README.md)
+ ### [Voltar](https://github.com/Davi-Prussek/programacao-II/blob/main/01_introducao-ao-typescript/01_O%20que%20%C3%A9%20TypeScript/README.md)
 
 # Configuração do Node.js LTS
 
@@ -10,34 +10,52 @@ TypeScript.
 
 ## 1. Windows
 
-1. Acesse o site oficial: [https://nodejs.org](https://nodejs.org)  
-2. Baixe o instalador **LTS** (arquivo `.msi`)  
-3. Execute o instalador:
+1. ### Acesse o site oficial: [https://nodejs.org](https://nodejs.org)  
+
+2. ### Baixe o instalador **LTS** (arquivo `.msi`)  
+
+3. ### Execute o instalador:
    
    - Aceite os termos
    - Marque a opção para adicionar o Node ao PATH
-   - Mantenha as opções padrão  
-5. Abra o **Prompt de Comando** ou **PowerShell** e verifique:
+   - Mantenha as opções padrão
+     
 
+4. ### Abra o **Prompt de Comando** ou **PowerShell** e verifique:
+  # 
+  ### *ATENÇÂO*
+  Rode os dois comandos separadamente pra evitar confusões desnecessárias
+  #
 ```bash
 node -v
+```
+   O primeiro comando verifica a versão do node instalado na máquina.
+```bash
 npm -v
 ```
-  - O primeiro comando verifica a versão do node instalado na máquina.
-  - O segundo comando mostra a versão do npm que veio com o node.
+   O segundo comando mostra a versão do npm que veio com o node.
+
+5. ### Caso dê algum erro, o que fazer: 
+  
+  ```bash
+  npm install
+   ```
+
 
 ## 2. Linux
 
- 1. Rode no terminal da máquina os seguintes comandos: 
+ 1. ### Rode no terminal da máquina os seguintes comandos: 
 
   ```bash
   sudo apt update
   sudo apt install -y nodejs npm
   ```
+
   - O primeiro comando atualiza o catálogo de pacotes do seu linux.
   - O segundo instala o node.js.
 
- 2. Verifique a versão do node.js e do npm
+ ### 2. Verifique a versão do node.js e do npm
+
 ```bash
 node -v
 npm -v
@@ -78,6 +96,7 @@ npm -v
       ```
 
 ## [A versão exibida foi LTS? pode continuar para o próximo passo aqui!](https://github.com/Davi-Prussek/programacao-II/blob/main/01_introducao-ao-typescript/03_Diferen%C3%A7as%20de%20JS%20pra%20TS/README.md)
+
 
 
 
