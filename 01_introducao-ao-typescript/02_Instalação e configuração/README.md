@@ -116,13 +116,13 @@ npm -v
 
     **Solução:**
 
-    - Insira este comando no terminal:
+    Insira este comando no terminal:
     
     ```
     Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
     ```
 
-    - Digite Y e depois feche o terminal e teste:
+    Digite Y e depois feche o terminal e teste:
 
     ```bash
     npm -v
@@ -145,14 +145,14 @@ npm -v
 
 **Solução:**
 
-- Rode o seguinte código no terminal:
+Rode o seguinte código no terminal:
 
   ```bash
   Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
   ```
   Este código define a política de execução de scripts do PowerShell.
 
-- Teste novamente e separadamente:
+Teste novamente e separadamente:
 
 ```bash
 node -v
@@ -214,6 +214,7 @@ npm -v
      ```
 
 ## [A versão exibida foi LTS? pode continuar para o próximo passo aqui!](https://github.com/Davi-Prussek/programacao-II/blob/main/01_introducao-ao-typescript/03_Diferen%C3%A7as%20de%20JS%20pra%20TS/README.md)
+
 
 
 
