@@ -44,7 +44,7 @@ TypeScript.
    - Mantenha as opções padrão
      
 
- ### 5. Abra o **Prompt de Comando** ou **PowerShell** e verifique:
+ ### 5. Abra o terminal **cmd** ou **PowerShell** e verifique:
  
   # 
   
@@ -56,11 +56,11 @@ TypeScript.
 ```bash
 node -v
 ```
-   O primeiro comando verifica a versão do node instalado na máquina.
+   > O primeiro comando verifica a versão do node instalado na máquina.
 ```bash
 npm -v
 ```
-   O segundo comando mostra a versão do npm que veio com o node.
+   > O segundo comando mostra a versão do npm que veio com o node.
 
 
 
@@ -88,7 +88,7 @@ npm -v
   
   - Feche e abra o terminal
   
-  - Teste novamente e separadamente:
+  - Teste novamente e separadamente em qualquer um dos dois terminais(**cmd** ou **powershell**):
   
   ```bash
   node -v
@@ -97,7 +97,7 @@ npm -v
 
 ### 2. **node -v** funciona, mas **npm -v** não:
 
-  Verifique se o npm existe no PATH:
+  Rode no terminal **cmd** pra verificar se o npm existe no PATH:
 
   ```bash
   where npm
@@ -116,48 +116,47 @@ npm -v
 
     **Solução:**
 
-    Insira este comando no terminal:
-    
+    Insira este comando no terminal **powershell**:
+
     ```
     Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
     ```
 
-    Digite Y e depois feche o terminal e teste:
+    > **Execution Policy** no PowerShell, é uma regra de segurança que define quais scripts podem ser executados. Ela existe pra evitar que você rode scripts maliciosos sem querer e esse comando       define a política **RemoteSigned** de execução de scripts do PowerShell, mas não se preocupe com a possibilidade de instalar scripts maliciosos sem querer, pois a política difinida bloqueia scripts remotos não assinados(Não confiáveis). Já a parte **-Scope CurrentUser** significa que o comando vai ser aplicado somente no seu usuário. 
+
+    Digite Y e depois feche o terminal e teste no terminal(**cmd** ou **powershell**):
 
     ```bash
     npm -v
     ```
     
   - **Caso B:**
-
+  
     **where npm** não retorna nada
-
+  
     **Causa:** npm não está no PATH
-
+  
     **Solução:**
-
+  
     - Reinstalar o Node.js
     - Garantir que a opção **Add to PATH** esteja marcada
+  
+  - **Caso alternativo:**
 
-  ### 3. **npm.cmd** funciona, mas **npm** não:
+    Se o **where npm** retornou:
 
-  **Causa:** Execution Policy do PowerShell.
+    ```files
+    C:\Program Files\nodejs\npm
+    C:\Program Files\nodejs\npm.cmd
+    ```
 
-**Solução:**
+    Mas você **não quer mudar a Execution Policy do PowerShell**, é possível usar o npm chamando diretamente o executável(reforçando, no powershell):
 
-Rode o seguinte código no terminal:
+   ```powershell
+   npm.cmd -v
+   ```
 
-  ```bash
-  Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-  ```
-  Este código define a política de execução de scripts do PowerShell.
-
-Teste novamente e separadamente:
-
-```bash
-node -v
-npm -v
-```
+   > É uma opção viável porém não muito prática pois o comando **npm.cmd** é mais extenso e demorado e como npm é usado para muitas coisas, seria mais aconselhável configurar para usar somente o **npm**.
 
 ## 2. Linux
 
@@ -214,6 +213,7 @@ npm -v
      ```
 
 ## [A versão exibida foi LTS? pode continuar para o próximo passo aqui!](https://github.com/Davi-Prussek/programacao-II/blob/main/01_introducao-ao-typescript/03_Diferen%C3%A7as%20de%20JS%20pra%20TS/README.md)
+
 
 
 
