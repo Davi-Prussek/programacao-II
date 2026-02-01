@@ -10,18 +10,41 @@ TypeScript.
 
 ## 1. Windows
 
-1. ### Acesse o site oficial: [https://nodejs.org](https://nodejs.org)  
+ 
+ ### 1. Acesse o site oficial: [https://nodejs.org](https://nodejs.org)  
 
-2. ### Baixe o instalador **LTS** (arquivo `.msi`)  
+#
 
-3. ### Execute o instalador:
+  <img src="../../assets/01.png" width="500">
+
+#
+
+### 2.Após entrar, clique em get node.js
+
+# 
+
+  <img src="../../assets/02.png" width="500">
+
+ 
+### Você vai ser levado pra cá:
+<img src="../../assets/03.png" width="500">
+
+#
+
+3. ### Baixe o instalador **LTS** (arquivo `.msi`)  
+
+<img src="../../assets/04.png" width="500">
+
+#
+
+4. ### Execute o instalador:
    
    - Aceite os termos
    - Marque a opção para adicionar o Node ao PATH
    - Mantenha as opções padrão
      
 
-4. ### Abra o **Prompt de Comando** ou **PowerShell** e verifique:
+5. ### Abra o **Prompt de Comando** ou **PowerShell** e verifique:
   # 
   ### *ATENÇÂO*
   Rode os dois comandos separadamente pra evitar confusões desnecessárias
@@ -36,9 +59,12 @@ npm -v
    O segundo comando mostra a versão do npm que veio com o node.
 
 5. ### Caso dê algum erro, o que fazer: 
-  
+
+  Tem alguns casos possíveism=, que são:
+
+  - 1.
   ```bash
-  npm install
+  
    ```
 
 
@@ -96,6 +122,7 @@ npm -v
       ```
 
 ## [A versão exibida foi LTS? pode continuar para o próximo passo aqui!](https://github.com/Davi-Prussek/programacao-II/blob/main/01_introducao-ao-typescript/03_Diferen%C3%A7as%20de%20JS%20pra%20TS/README.md)
+
 
 
 
