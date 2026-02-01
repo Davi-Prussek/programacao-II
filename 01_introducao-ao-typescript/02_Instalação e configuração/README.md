@@ -1,4 +1,4 @@
- ### [Voltar](https://github.com/Davi-Prussek/programacao-II/blob/main/01_introducao-ao-typescript/01_O%20que%20%C3%A9%20TypeScript/README.md)
+\ ### [Voltar](https://github.com/Davi-Prussek/programacao-II/blob/main/01_introducao-ao-typescript/01_O%20que%20%C3%A9%20TypeScript/README.md)
 
 # Configuração do Node.js LTS
 
@@ -88,40 +88,41 @@ npm -v
 ```
   - Verifique no site oficial [nodejs.org](https://nodejs.org/en) se a versão exibida é a LTS, caso for, pode ignorar os próximos passos.
   - Caso não seja, siga os próximos passos:
-    - Instale o nvm rodando este comando no terminal da máquina:
+   - Instale o nvm rodando este comando no terminal da máquina:
 
-      ```bash
-      curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.6/install.sh | bash
-      ```
+    ```bash
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.6/install.sh | bash
+    ```
 
-    - Ative o nvm no terminal da máquina:
+  - Ative o nvm no terminal da máquina:
 
-      ```bash
-      source ~/.bashrc
-      ```
+    ```bash
+    source ~/.bashrc
+    ```
 
-    - Instalar a versão LTS do Node.js:
+  - Instalar a versão LTS do Node.js:
 
-      ```bash
-      nvm install --lts
-      ```
+    ```bash
+    nvm install --lts
+    ```
 
-    - Usar a versão LTS como padrão:
+  - Usar a versão LTS como padrão:
 
-      ```bash
-      nvm use --lts
-      nvm alias default lts/*
-      ```  
-        - O primeiro comando ativa o LTS somente na aba do terminal atual.
-        - O segundo comando ativa o LTS como padrão do sistema.
+    ```bash
+    nvm use --lts
+    nvm alias default lts/*
+    ```  
+      - O primeiro comando ativa o LTS somente na aba do terminal atual.
+      - O segundo comando ativa o LTS como padrão do sistema.
 
-    - Rode novamente o comando para ver qual a versão do node no terminal:
+  - Rode novamente o comando para ver qual a versão do node no terminal:
 
-      ```bash
-      node -v
-      ```
+    ```bash
+    node -v
+    ```
 
 ## [A versão exibida foi LTS? pode continuar para o próximo passo aqui!](https://github.com/Davi-Prussek/programacao-II/blob/main/01_introducao-ao-typescript/03_Diferen%C3%A7as%20de%20JS%20pra%20TS/README.md)
+
 
 
 
