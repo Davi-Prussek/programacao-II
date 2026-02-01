@@ -1,4 +1,4 @@
-\ ### [Voltar](https://github.com/Davi-Prussek/programacao-II/blob/main/01_introducao-ao-typescript/01_O%20que%20%C3%A9%20TypeScript/README.md)
+ ### [Voltar](https://github.com/Davi-Prussek/programacao-II/blob/main/01_introducao-ao-typescript/01_O%20que%20%C3%A9%20TypeScript/README.md)
 
 # Configuração do Node.js LTS
 
@@ -19,36 +19,40 @@ TypeScript.
 
 #
 
-### 2.Após entrar, clique em get node.js
+### 2. Após entrar, clique em **Get node.js**
 
 # 
 
   <img src="../../assets/02.png" width="500">
 
  
-### Você vai ser levado pra cá:
+### Você vai ser levado para essa página:
 <img src="../../assets/03.png" width="500">
 
 #
 
-3. ### Baixe o instalador **LTS** (arquivo `.msi`)  
+ ### 3. Baixe o instalador **LTS** (arquivo `.msi`)  
 
 <img src="../../assets/04.png" width="500">
 
 #
 
-4. ### Execute o instalador:
+ ### 4. Execute o instalador:
    
    - Aceite os termos
    - Marque a opção para adicionar o Node ao PATH
    - Mantenha as opções padrão
      
 
-5. ### Abra o **Prompt de Comando** ou **PowerShell** e verifique:
+ ### 5. Abra o **Prompt de Comando** ou **PowerShell** e verifique:
+ 
   # 
-  ### *ATENÇÂO*
+  
+  ### **ATENÇÃO:**
   Rode os dois comandos separadamente pra evitar confusões desnecessárias
+  
   #
+  
 ```bash
 node -v
 ```
@@ -58,15 +62,102 @@ npm -v
 ```
    O segundo comando mostra a versão do npm que veio com o node.
 
-5. ### Caso dê algum erro, o que fazer: 
 
-  Tem alguns casos possíveism=, que são:
 
-  - 1.
-  ```bash
+# [Deu tudo certo? pode ir para próxima parte do tutorial e ignorar o resto dessa etapa!](https://github.com/Davi-Prussek/programacao-II/blob/main/01_introducao-ao-typescript/03_Diferen%C3%A7as%20de%20JS%20pra%20TS/README.md)
+
+ ## Caso dê algum erro, o que fazer: 
   
-   ```
+ Tem alguns casos possíveis, que são:
+  
+  ### 1. **node -v** não funciona:
 
+**Causa:** 
+  
+  Node.js não instalado corretamente ou não adicionado ao PATH.
+
+**Solução:**
+
+  - Desinstale o Node.js
+  
+  - Reinstale pelo site oficial
+  
+  - Durante a instalação, marque:
+  
+  > Add to PATH
+  
+  - Feche e abra o terminal
+  
+  - Teste novamente e separadamente:
+  
+  ```bash
+  node -v
+  npm -v
+  ```
+
+### 2. **node -v** funciona, mas **npm -v** não:
+
+  Verifique se o npm existe no PATH:
+
+  ```bash
+  where npm
+  ```
+
+  - **Caso A:**
+    
+    Aparecem npm e npm.cmd
+  
+    ```files
+    C:\Program Files\nodejs\npm
+    C:\Program Files\nodejs\npm.cmd
+    ```
+
+    **Causa:** PowerShell bloqueando scripts
+
+    **Solução:**
+
+    - Insira este comando no terminal:
+    
+    ```
+    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+    ```
+
+    - Digite Y e depois feche o terminal e teste:
+
+    ```bash
+    npm -v
+    ```
+    
+  - **Caso B:**
+
+    **where npm** não retorna nada
+
+    **Causa:** npm não está no PATH
+
+    **Solução:**
+
+    - Reinstalar o Node.js
+    - Garantir que a opção **Add to PATH** esteja marcada
+
+  ### 3. **npm.cmd** funciona, mas **npm** não:
+
+  **Causa:** Execution Policy do PowerShell.
+
+**Solução:**
+
+- Rode o seguinte código no terminal:
+
+  ```bash
+  Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+  ```
+  Este código define a política de execução de scripts do PowerShell.
+
+- Teste novamente e separadamente:
+
+```bash
+node -v
+npm -v
+```
 
 ## 2. Linux
 
@@ -87,9 +178,10 @@ node -v
 npm -v
 ```
   - Verifique no site oficial [nodejs.org](https://nodejs.org/en) se a versão exibida é a LTS, caso for, pode ignorar os próximos passos.
-  - Caso não seja, siga os próximos passos:
-    - Instale o nvm rodando este comando no terminal da máquina:
-  
+  > Caso não seja, siga os próximos passos:
+    
+  - Instale o nvm rodando este comando no terminal da máquina:
+
      ```bash
      curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.6/install.sh | bash
      ```
@@ -122,6 +214,7 @@ npm -v
      ```
 
 ## [A versão exibida foi LTS? pode continuar para o próximo passo aqui!](https://github.com/Davi-Prussek/programacao-II/blob/main/01_introducao-ao-typescript/03_Diferen%C3%A7as%20de%20JS%20pra%20TS/README.md)
+
 
 
 
