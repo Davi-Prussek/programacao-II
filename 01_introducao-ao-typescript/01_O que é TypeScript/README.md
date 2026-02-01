@@ -1,5 +1,5 @@
-# O que é TypeScript?
-
+# <img width="35" height="35" alt="image" src="https://github.com/user-attachments/assets/e7f1c7b4-1967-4278-bdfa-efa1d05acf07"/> O que é TypeScript?
+ 
 TypeScript é uma linguagem baseada em JavaScript que adiciona **tipagem estática** ao código.
 
 Isso significa que podemos informar:
@@ -28,5 +28,6 @@ O conteúdo parte dos conhecimentos de lógica de programação já adquiridos e
 permitindo ao aluno aprender a usar o TypeScript de forma estruturada.
 
 ## [Apresentado ao TypeScript, vamos configurar o ambiente!](https://github.com/Davi-Prussek/programacao-II/blob/main/01_introducao-ao-typescript/02_Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o/README.md)
+
 
 
