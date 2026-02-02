@@ -23,6 +23,8 @@ const nome: string = "Joao"; // não pode mudar
 // nome = "Ana";             // Erro de compilação
 ```
 
+---
+
 ## 2. Tipos Primitivos
 
 No TypeScript você consegue declarar o tipo de uma variável, e os tipos existentes são:
@@ -57,7 +59,9 @@ qualquerCoisa = true;
 // Todas essas opções são aceitáveis, pois o tipo any aceita todos tipos de dados
 ```
 
-## 3. Tipos compostos básicos
+---
+
+## 3. Tipos compostos (básicos)
 
 Tipos compostos são estruturas que já existiam no JavaScript e aqui no TypeScript receberam tipagem, como arrays, objetos e funções.
 
@@ -65,7 +69,7 @@ Tipos compostos são estruturas que já existiam no JavaScript e aqui no TypeScr
 
 Os arrays no TypeScript funcionam de forma parecida com o JavaScript, porém com uma diferença importante: **é necessário definir o tipo dos valores que o array pode armazenar**.
 
-**number[ ]**
+### number[ ]
 
 Um array que aceita apenas valores do tipo number.
 
@@ -80,7 +84,7 @@ let listaCoisas1: number[] = [1,2,3,4,5];
 // listaCoisas1.push("6") // Erro de compilação
 ```
 
-**string[ ]**
+### string[ ]
 
 Um array que aceita apenas valores do tipo string.
 
@@ -95,7 +99,7 @@ let listaCoisas2: string[] = ["carro","moto","aviao"];
 // listaCoisas2.push(678)         // Erro de compilação
 ```
 
-**boolean[ ]**
+### boolean[ ]
 
 Um array que aceita apenas valores do tipo boolean.
 
@@ -117,6 +121,19 @@ let listaCoisas3: boolean[] = [true, false, false];
 > O TypeScript não permite misturar tipos diferentes dentro do mesmo array, a menos que isso seja declarado explicitamente (veremos isso mais adiante).
 
 #
+
+## objetos: 
+
+Os objetos no TypeScript funcionam de forma parecida com o JavaScript, porém com uma diferença importante: **é necessário definir o tipo de cada propriedade do objeto.**
+
+```ts
+const objetoQualquer: {nome: string; idade: number} = {
+nome: "Joao",
+idade: 17,
+};
+```
+
+---
 
 ## 4. Inferência de Tipos
 
@@ -265,8 +282,8 @@ listaCoisas3.push(true) // Permitido;
 
 ```ts
 let objetoCoisa = {
-nome: "Joao"
-idade: 17
+nome: "Joao",
+idade: 17,
 };
 ```
 
@@ -275,7 +292,7 @@ idade: 17
 ```ts
 let objetoCoisa: {nome: string; idade: number} = {
 nome: "Joao",
-idade: 17
+idade: 17,
 };
 ```
 
