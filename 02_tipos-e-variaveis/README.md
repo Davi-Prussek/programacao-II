@@ -59,6 +59,64 @@ qualquerCoisa = true;
 
 ## 3. Tipos compostos básicos
 
+Tipos compostos são estruturas que já existiam no JavaScript e aqui no TypeScript receberam tipagem, como arrays, objetos e funções.
+
+### **arrays:**
+
+Os arrays no TypeScript funcionam de forma parecida com o JavaScript, porém com uma diferença importante: **é necessário definir o tipo dos valores que o array pode armazenar**.
+
+**number[ ]**
+
+Um array que aceita apenas valores do tipo number.
+
+```ts
+let listaCoisas1: number[] = [1,2,3,4,5]; 
+```
+
+> O TypeScript entende que esse array só pode conter valores do tipo number e dá erro caso tente adicionar valores de outros tipos, por exemplo:
+
+```ts 
+// listaCoisas1.push(6)   // Permitido
+// listaCoisas1.push("6") // Erro de compilação
+```
+
+**string[ ]**
+
+Um array que aceita apenas valores do tipo string.
+
+```ts
+let listaCoisas2: string[] = ["carro","moto","aviao"]; 
+```
+
+> O TypeScript entende que esse array só pode conter valores do tipo string e dá erro caso tente adicionar valores de outros tipos, por exemplo:
+
+```ts 
+// listaCoisas2.push("submarino") // Permitido
+// listaCoisas2.push(678)         // Erro de compilação
+```
+
+**boolean[ ]**
+
+Um array que aceita apenas valores do tipo boolean.
+
+```ts
+let listaCoisas3: boolean[] = [true, false, false]; 
+```
+
+> O TypeScript entende que esse array só pode conter valores do tipo boolean e dá erro caso tente adicionar valores de outros tipos, por exemplo:
+
+```ts 
+// listaCoisas3.push(false) // Permitido
+// listaCoisas3.push(12)    // Erro de compilação
+```
+
+#
+
+### Observação importante
+
+> O TypeScript não permite misturar tipos diferentes dentro do mesmo array, a menos que isso seja declarado explicitamente (veremos isso mais adiante).
+
+#
 
 ## 4. Inferência de Tipos
 
@@ -107,7 +165,7 @@ qualquerCoisa1 = 21; // Permitido
 
 Com outros tipos de valores por exemplo:
 
-## string:
+## **string:**
 
 ```ts
 let qualquerCoisa2 = "Hello world";
