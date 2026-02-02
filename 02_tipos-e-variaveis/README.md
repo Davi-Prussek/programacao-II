@@ -57,7 +57,10 @@ qualquerCoisa = true;
 // Todas essas opções são aceitáveis, pois o tipo any aceita todos tipos de dados
 ```
 
-## 3. Inferência de Tipos
+## 3. Tipos compostos básicos
+
+
+## 4. Inferência de Tipos
 
 A inferência de tipos é quando o TypeScript descobre sozinho qual é o tipo de uma variável, sem você precisar escrever : number, : string, etc.
 
@@ -142,6 +145,119 @@ qualquerCoisa3 = false // Permitido;
 // qualquerCoisa3 = "computador" // Erro de compilação;
 ```
 
+## arrays (number[ ], string[ ] e boolean[ ]):
+
+### number[ ]:
+```ts
+let listaCoisas1 = [1,2,3];
+```
+
+> Foi travada como number[] e o TypeScript vai inferir ela como:
+
+```ts
+let listaCoisas1: number[] = [1,2,3,4,5];
+```
+
+### Mas se tentar adicionar valores de tipos diferentes, dá erro:
+
+```ts
+listaCoisas1.push(6) // Permitido;
+// listaCoisas1.push("hello country") // Erro de compilação;
+```
+
+### string[ ]:
+
+```ts
+let listaCoisas2 = ["carro","moto","aviao"];
+```
+
+> Foi travada como string[] e o TypeScript vai inferir ela como:
+
+```ts
+let listaCoisas2: string[] = ["carro","moto","aviao"];
+```
+
+### Mas se tentar adicionar valores de tipos diferentes, dá erro:
+
+```ts
+listaCoisas2.push("submarino") // Permitido;
+// listaCoisas2.push(7) // Erro de compilação;
+```
+
+### boolean[ ]:
+
+```ts
+let listaCoisas3 = [true,false,false];
+```
+
+> Foi travada como string[] e o TypeScript vai inferir ela como:
+
+```ts
+let listaCoisas3: boolean[] = [true,false,false];
+```
+
+### Mas se tentar adicionar valores de tipos diferentes, dá erro:
+
+```ts
+listaCoisas3.push(true) // Permitido;
+// listaCoisas3.push("hello country") // Erro de compilação;
+```
+
+## objetos
+
+```ts
+let objetoCoisa = {
+nome: "Joao"
+idade: 17
+};
+```
+
+> A propriedade **nome** foi travada como string e a propriedade **idade** foi travada como number e o TypeScript vai inferir elas como:
+
+```ts
+let objetoCoisa: {nome: string; idade: number} = {
+nome: "Joao",
+idade: 17
+};
+```
+
+### Mas se tentar adicionar valores de tipos diferentes nas propriedades, dá erro:
+
+```ts
+objetoCoisa.nome = "Jorge"; // Permitido
+objetoCoisa.idade = 19; // Permitido
+
+// objetoCoisa.nome = 65 // Erro de compilação
+// objetoCoisa.idade = "25" // Erro de compilação
+```
+
+## function
+
+```ts
+function soma(a: number, b: number) {
+  return a + b;
+}
+```
+
+> O return da função foi travado como number e o TypeScript vai inferir ela como:
+
+```ts
+function soma(a: number, b: number): number {
+  return a + b;
+}
+```
+
+### Mas se tentar usar valores de tipos diferentes nos parâmetros, dá erro:
+
+```ts
+soma(1, 2) // Permitido
+soma(12, 35) // Permitido
+
+soma("1", 2)    // Erro de compilação
+soma(1, "2")    // Erro de compilação
+soma("1", "2")  // Erro de compilação
+```
+
 ---
 
 ### ATENÇÃO: 
@@ -170,8 +286,25 @@ let qualquerCoisa4;
 // let qualquerCoisa4: string;
 // let qualquerCoisa4: number;
 // let qualquerCoisa4: boolean;
+// let qualquerCoisa4: string[ ];
+// let qualquerCoisa4: number[ ];
+// let qualquerCoisa4: boolean[ ];
+// let qualquerCoisa4: {nome: string; idade: number};
 ```
 
 > Qualquer uma, só lembre dessa regrinha do TS.
 
 ---
+
+### Quando usar inferência:
+
+ - Quando o valor inicial deixa o tipo óbvio
+ - Em variáveis simples
+ - Para código mais limpo
+ 
+### Quando NÃO usar:
+ 
+ - Variáveis vazias
+ - APIs
+ - Dados que mudam de forma
+ - Código público / compartilhado
