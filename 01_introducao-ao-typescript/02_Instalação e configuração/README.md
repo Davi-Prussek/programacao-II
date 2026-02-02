@@ -62,6 +62,7 @@ npm -v
 ```
    > O segundo comando mostra a versão do npm que veio com o node.
 
+   Se o **npm -v** funcionar no cmd, teste no powershell depois para ver se está tudo certo com as configurações, caso não rodar no **powershell**, vá para a sessão **"Caso dê algum erro, o que fazer: caso 2"**.
 
 
 # [Deu tudo certo? pode ir para próxima parte do tutorial e ignorar o resto dessa etapa!](https://github.com/Davi-Prussek/programacao-II/blob/main/01_introducao-ao-typescript/03_Diferen%C3%A7as%20de%20JS%20pra%20TS/README.md)
@@ -213,6 +214,7 @@ npm -v
      ```
 
 ## [A versão exibida foi LTS? pode continuar para o próximo passo aqui!](https://github.com/Davi-Prussek/programacao-II/blob/main/01_introducao-ao-typescript/03_Diferen%C3%A7as%20de%20JS%20pra%20TS/README.md)
+
 
 
 
