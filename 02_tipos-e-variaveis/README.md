@@ -27,15 +27,15 @@ const nome: string = "Joao"; //não pode mudar
 
 No TypeScript você consegue declarar o tipo de uma variável, e os tipos existentes são:
 
-- string → texto/escrita
+- **string** → texto/escrita
 
-- number → números (inteiros ou decimais)
+- **number** → números (inteiros ou decimais)
 
-- boolean → true ou false
+- **boolean** → true ou false
 
-- any → aceita qualquer valor (não recomendado, pois ignora a verificação de tipos)
+- **any** → aceita qualquer valor (não recomendado, pois ignora a verificação de tipos)
 
-- unknown → aceita qualquer valor, mas precisa de verificação antes de usar
+- **unknown** → aceita qualquer valor, mas precisa de verificação antes de usar
 
 ```ts
 let nome: string = "Joao"; // A variável nome foi tipada para ser uma string
