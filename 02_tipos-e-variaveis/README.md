@@ -16,11 +16,11 @@ Em TypeScript (assim como em JavaScript moderno), usamos **`let`**, **`const`** 
 Exemplo:
 
 ```ts
-let idade: number = 17;  //pode mudar
+let idade: number = 17;  // pode mudar
 idade = 18;
 
-const nome: string = "Joao"; //não pode mudar
-// nome = "Ana";             //Erro de compilação
+const nome: string = "Joao"; // não pode mudar
+// nome = "Ana";             // Erro de compilação
 ```
 
 ## 2. Tipos Primitivos
@@ -58,3 +58,120 @@ qualquerCoisa = true;
 ```
 
 ## 3. Inferência de Tipos
+
+A inferência de tipos é quando o TypeScript descobre sozinho qual é o tipo de uma variável, sem você precisar escrever : number, : string, etc.
+
+### Exemplos:
+
+# 
+
+Com tipagem clara:
+
+```ts
+let idade: number = 17;
+```
+
+Com inferência:
+
+```ts
+let idade = 17;
+```
+
+No segundo jeito não foi especificado o tipo da variável mas o TypeScript entende que é **number** por meio da infêrencia.
+
+### COMO O TS PENSA?
+
+#
+
+Ele olha o valor da variável: 
+
+```ts
+let qualquerCoisa1 = 17;
+```
+
+> Aí ele vai pensar: "hmm, o valor da variável é um number então o tipo da variável também só pode ser number" e vai compreender assim:
+
+```ts
+let qualquerCoisa1: number = 17;
+```
+
+Depois disso a variável fica travada com a tipagem **number** e não pode receber valores de outros tipo, por exemplo:
+
+```ts
+qualquerCoisa1 = 21; // Permitido
+// qualquerCoisa1 = "sanduiche"; // Erro de compilação 
+```
+
+Com outros tipos de valores por exemplo:
+
+## string:
+
+```ts
+let qualquerCoisa2 = "Hello world";
+```
+
+> Foi travada como string e o TypeScript vai inferir ela como:
+
+```ts
+let qualquerCoisa2: string = "Hello world";
+```
+
+### Mas se tentar mudar o tipo do valor da variável dá erro também igual aos outros exemplos:
+
+```ts
+qualquerCoisa2 = "Goodbye world" // Permitido;
+// qualquerCoisa2 = 158 // Erro de compilação;
+```
+
+## boolean
+
+```ts
+let qualquerCoisa3 = true;
+```
+
+> Foi travada como boolean e o TypeScript vai inferir ela como:
+
+```ts
+let qualquerCoisa3: boolean = true;
+```
+
+### Mas se tentar mudar o tipo do valor da variável dá erro também igual aos outros exemplos:
+
+```ts
+qualquerCoisa3 = false // Permitido;
+// qualquerCoisa3 = "computador" // Erro de compilação;
+```
+
+---
+
+### ATENÇÃO: 
+
+A inferência de tipos não é algo ruim e pode até agilizar a escrita do código. Porém, é preciso ter alguns cuidados ao utilizá-la:
+
+> Só usar a infêrencia de dados quando a variável for criada com um valor predefinido com tipo explícito.
+
+> Evitar criar variáveis vazias pois o TypeScript entende a variável como sendo do tipo any e permite a entrada de qualquer valor, assim quebrando a segurança do TS. 
+
+### SIGA ESTÁ REGRA PARA FACILITAR O APRENDIZADO:
+
+se a variável nasce com valor = inferência é segura e recomendada para deixar o código mais simples e limpo.
+
+Se a variável nasce sem valor = declare o tipo explicitamente antes para deixar ocódigo seguro de erros.
+
+### EXEMPLO PRÁTICO: 
+
+```ts
+let qualquerCoisa4;
+```
+
+> A variável foi tipada como any e vai aceitar qualquer valor e deixar seu código Suscetível a valores errados nas variáveis erradas, tipe antes.
+
+```ts
+// let qualquerCoisa4: string;
+// let qualquerCoisa4: number;
+// let qualquerCoisa4: boolean;
+```
+
+> Qualquer uma, só lembre dessa regrinha do TS.
+
+---
