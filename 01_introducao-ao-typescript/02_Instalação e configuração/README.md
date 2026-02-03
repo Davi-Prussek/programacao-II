@@ -44,7 +44,7 @@ TypeScript.
    - Mantenha as opções padrão
      
 
- ### 5. Abra o terminal **cmd** ou **PowerShell** e verifique:
+ ### 5. Aperte windows + R para abrir o **prompt** de comando e digite **"PowerShell"** para abrir o terminal(powershell) e escreva:
  
   # 
   
@@ -214,6 +214,7 @@ npm -v
      ```
 
 ## [A versão exibida foi LTS? pode continuar para o próximo passo aqui!](https://github.com/Davi-Prussek/programacao-II/blob/main/01_introducao-ao-typescript/03_Diferen%C3%A7as%20de%20JS%20pra%20TS/README.md)
+
 
 
 
